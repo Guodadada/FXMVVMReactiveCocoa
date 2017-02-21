@@ -1,0 +1,22 @@
+//
+//  FXMVVMReactive-Prefix.pch
+//  FXMVVMReactiveCocoa
+//
+//  Created by V on 2017/2/12.
+//  Copyright © 2017年 com.fengxian. All rights reserved.
+//
+
+#ifndef FXMVVMReactive_Prefix_pch
+#define FXMVVMReactive_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+    #import "AppDelegate.h"
+    #import "FXConstant.h"
+    #import "FXConfig.h"
+    #import <ReactiveObjC/ReactiveObjC.h>
+#endif
+
+#endif /* FXMVVMReactive_Prefix_pch */

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-FXMVVMReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FXMVVMReactiveCocoaTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-FXMVVMReactiveCocoaUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveObjC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>242EF54CC6BFF1D5E09B72470D9368BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31E6D7901237CC6F7EA2EEE8948C96FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5058DD6639C7530D1D543288DF177FB5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0A5FD6E09E0F723A5536B829C261F6B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
