@@ -6,6 +6,7 @@ target 'FXMVVMReactiveCocoa' do
   # use_frameworks!
 
   pod 'ReactiveObjC', '~> 2.1.1'
+  pod 'OcticonsIOS', :git => 'https://github.com/jacksonh/OcticonsIOS.git', :commit => '4bd3b21'
 
   target 'FXMVVMReactiveCocoaTests' do
     inherit! :search_paths

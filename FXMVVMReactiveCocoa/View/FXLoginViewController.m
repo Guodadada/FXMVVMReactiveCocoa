@@ -8,6 +8,7 @@
 
 #import "FXLoginViewController.h"
 #import "FXLoginViewModel.h"
+#import "UIImage+FXOcticons.h"
 
 @interface FXLoginViewController ()
 
@@ -29,8 +30,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    RAC(self.loginButton, enabled) = _viewModel.validLoginSignal;
+    
+    self.usernameImageView.image = [UIImage octicon_imageWithIdentifier:@"Person"
+                                                                   size:CGSizeMake(22, 22)];
+    self.passwordImageView.image = [UIImage octicon_imageWithIdentifier:@"Lock"
+                                                                   size:CGSizeMake(22, 22)];
+    
+    RAC(_loginButton, enabled) = _viewModel.validLoginSignal;
+    @weakify(self)
+    [[_loginButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        @strongify(self)
+        [self.viewModel.loginCommand execute:nil];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

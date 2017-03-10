@@ -105,6 +105,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="GgL-Ys-eWA"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="Log In">
                         <color key="titleShadowColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
