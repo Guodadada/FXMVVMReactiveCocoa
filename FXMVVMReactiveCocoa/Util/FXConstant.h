@@ -36,5 +36,6 @@ typedef void(^VoidBlock)();
 ///-----
 
 #define FX_FMDB_PATH [NSString stringWithFormat:@"%@/%@.db",FX_DOCUMENT_DIRECTORY, FX_APP_NAME]
+#define FXLogLastError(db) NSLog(@"lastError: %@, lastErrorCode: %d, lastErrorMessage: %@", [db lastError], [db lastErrorCode], [db lastErrorMessage]);
 
 #endif /* FXConstant_h */

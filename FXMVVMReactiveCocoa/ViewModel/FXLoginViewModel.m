@@ -24,7 +24,7 @@
     
     RAC(self, avatarURL) = [[RACObserve(self, username)
                              map:^(NSString *username) {
-                                 return @"";
+                                 return [[OCTUser fx_fetchUserWithRawLogin:username] avatarURL];
     }] distinctUntilChanged];
     
     _validLoginSignal = [RACSignal combineLatest:@[RACObserve(self, username), RACObserve(self, password)]

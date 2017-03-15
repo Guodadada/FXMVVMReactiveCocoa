@@ -31,9 +31,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.usernameImageView.image = [UIImage octicon_imageWithIdentifier:@"Person"
+    self.usernameImageView.image = [UIImage fx_octicon_imageWithIdentifier:@"Person"
                                                                    size:CGSizeMake(22, 22)];
-    self.passwordImageView.image = [UIImage octicon_imageWithIdentifier:@"Lock"
+    self.passwordImageView.image = [UIImage fx_octicon_imageWithIdentifier:@"Lock"
                                                                    size:CGSizeMake(22, 22)];
     
     RAC(_loginButton, enabled) = _viewModel.validLoginSignal;

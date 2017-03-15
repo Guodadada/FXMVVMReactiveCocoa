@@ -10,6 +10,6 @@
 
 @interface UIImage (FXOcticons)
 
-+ (UIImage *)octicon_imageWithIdentifier:(NSString *)identifier size:(CGSize)size;
++ (UIImage *)fx_octicon_imageWithIdentifier:(NSString *)identifier size:(CGSize)size;
 
 @end

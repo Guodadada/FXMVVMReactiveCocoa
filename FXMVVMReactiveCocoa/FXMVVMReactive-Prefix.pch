@@ -20,6 +20,7 @@
     #import <OctoKit/Octokit.h>
     #import <FMDB/FMDB.h>
     #import "FMDatabaseQueue+FXHelper.h"
+    #import "OCTUser+FXPersistence.h"
 #endif
 
 #endif /* FXMVVMReactive_Prefix_pch */
