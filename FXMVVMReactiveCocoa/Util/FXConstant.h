@@ -9,6 +9,12 @@
 #ifndef FXConstant_h
 #define FXConstant_h
 
+///---------
+/// App Info
+///---------
+
+#define FX_APP_NAME    ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"])
+
 ///-----
 /// Log
 ///-----
@@ -24,5 +30,11 @@
 ///-----
 
 typedef void(^VoidBlock)();
+
+///-----
+/// FMDB
+///-----
+
+#define FX_FMDB_PATH [NSString stringWithFormat:@"%@/%@.db",FX_DOCUMENT_DIRECTORY, FX_APP_NAME]
 
 #endif /* FXConstant_h */

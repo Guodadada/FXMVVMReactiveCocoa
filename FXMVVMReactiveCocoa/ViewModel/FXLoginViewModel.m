@@ -24,10 +24,11 @@
     
     RAC(self, avatarURL) = [[RACObserve(self, username)
                              map:^(NSString *username) {
-        return @"";
+                                 return @"";
     }] distinctUntilChanged];
     
-    _validLoginSignal = [RACSignal combineLatest:@[RACObserve(self, username), RACObserve(self, password)] reduce:^(NSString *username, NSString *password){
+    _validLoginSignal = [RACSignal combineLatest:@[RACObserve(self, username), RACObserve(self, password)]
+                                          reduce:^(NSString *username, NSString *password){
         return @(username.length > 0 && password.length > 0);
     }];
     

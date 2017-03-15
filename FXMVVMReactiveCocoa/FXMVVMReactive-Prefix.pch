@@ -17,6 +17,9 @@
     #import "FXConstant.h"
     #import "FXConfig.h"
     #import <ReactiveObjC/ReactiveObjC.h>
+    #import <OctoKit/Octokit.h>
+    #import <FMDB/FMDB.h>
+    #import "FMDatabaseQueue+FXHelper.h"
 #endif
 
 #endif /* FXMVVMReactive_Prefix_pch */

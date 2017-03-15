@@ -15,4 +15,10 @@
 
 #define FXSharedAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
+///----------------------
+/// Persistence Directory
+///----------------------
+
+#define FX_DOCUMENT_DIRECTORY     NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject
+
 #endif /* FXConfig_h */
