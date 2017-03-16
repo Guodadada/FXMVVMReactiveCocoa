@@ -11,7 +11,7 @@
 
 @implementation UIImage (FXOcticons)
 
-+ (UIImage *)octicon_imageWithIdentifier:(NSString *)identifier size:(CGSize)size {
++ (UIImage *)fx_octicon_imageWithIdentifier:(NSString *)identifier size:(CGSize)size {
     return [UIImage octicon_imageWithIcon:identifier
                           backgroundColor:[UIColor clearColor]
                                 iconColor:[UIColor darkGrayColor]

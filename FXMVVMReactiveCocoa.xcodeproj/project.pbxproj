@@ -34,6 +34,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0E45FF0D1E7A3E6800E7BE29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E45FEFA1E7A3E6700E7BE29 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725EA19E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-Mac";
+		};
+		0E45FF0F1E7A3E6800E7BE29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E45FEFA1E7A3E6700E7BE29 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725F519E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-MacTests";
+		};
+		0E45FF111E7A3E6800E7BE29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E45FEFA1E7A3E6700E7BE29 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047260C19E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		0E45FF131E7A3E6800E7BE29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E45FEFA1E7A3E6700E7BE29 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047261619E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOSTests";
+		};
 		0E4B0DB91E779C1F00AAB107 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0E4B0DB11E779C1F00AAB107 /* OctoKit.xcodeproj */;
@@ -138,6 +166,7 @@
 		08A11C862ADA12E5943DAA12 /* libPods-FXMVVMReactiveCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FXMVVMReactiveCocoa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E07D2D31E79128100A226A0 /* OCTUser+FXPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCTUser+FXPersistence.h"; sourceTree = "<group>"; };
 		0E07D2D41E79128100A226A0 /* OCTUser+FXPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OCTUser+FXPersistence.m"; sourceTree = "<group>"; };
+		0E45FEFA1E7A3E6700E7BE29 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = OctoKit/Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 		0E4B0DB11E779C1F00AAB107 /* OctoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OctoKit.xcodeproj; path = OctoKit/OctoKit.xcodeproj; sourceTree = "<group>"; };
 		0E4B0DC11E779C6C00AAB107 /* OctoKitDependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OctoKitDependencies.xcodeproj; path = OctoKit/External/OctoKitDependencies/OctoKitDependencies.xcodeproj; sourceTree = "<group>"; };
 		0E4B0DDF1E779D0900AAB107 /* Mantle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mantle.xcodeproj; path = OctoKit/Carthage/Checkouts/Mantle/Mantle.xcodeproj; sourceTree = "<group>"; };
@@ -223,6 +252,7 @@
 		03B3E46ABBA7AD62F7268BD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E45FEFA1E7A3E6700E7BE29 /* ReactiveCocoa.xcodeproj */,
 				0E4B0DDF1E779D0900AAB107 /* Mantle.xcodeproj */,
 				0E4B0DC11E779C6C00AAB107 /* OctoKitDependencies.xcodeproj */,
 				0E4B0DB11E779C1F00AAB107 /* OctoKit.xcodeproj */,
@@ -231,6 +261,17 @@
 				2F6340EB6F82B44C5E146683 /* libPods-FXMVVMReactiveCocoaUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E45FEFB1E7A3E6700E7BE29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E45FF0E1E7A3E6800E7BE29 /* ReactiveCocoa.framework */,
+				0E45FF101E7A3E6800E7BE29 /* ReactiveCocoa-MacTests.xctest */,
+				0E45FF121E7A3E6800E7BE29 /* ReactiveCocoa.framework */,
+				0E45FF141E7A3E6800E7BE29 /* ReactiveCocoa-iOSTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		0E4B0DB21E779C1F00AAB107 /* Products */ = {
@@ -572,6 +613,10 @@
 					ProductGroup = 0E4B0DC21E779C6C00AAB107 /* Products */;
 					ProjectRef = 0E4B0DC11E779C6C00AAB107 /* OctoKitDependencies.xcodeproj */;
 				},
+				{
+					ProductGroup = 0E45FEFB1E7A3E6700E7BE29 /* Products */;
+					ProjectRef = 0E45FEFA1E7A3E6700E7BE29 /* ReactiveCocoa.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -583,6 +628,34 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		0E45FF0E1E7A3E6800E7BE29 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = 0E45FF0D1E7A3E6800E7BE29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E45FF101E7A3E6800E7BE29 /* ReactiveCocoa-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoa-MacTests.xctest";
+			remoteRef = 0E45FF0F1E7A3E6800E7BE29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E45FF121E7A3E6800E7BE29 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = 0E45FF111E7A3E6800E7BE29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E45FF141E7A3E6800E7BE29 /* ReactiveCocoa-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoa-iOSTests.xctest";
+			remoteRef = 0E45FF131E7A3E6800E7BE29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		0E4B0DBA1E779C1F00AAB107 /* OctoKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;

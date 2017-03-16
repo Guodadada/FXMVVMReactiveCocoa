@@ -3,12 +3,10 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - OcticonsIOS (0.0.2)
-  - ReactiveObjC (2.1.1)
 
 DEPENDENCIES:
   - FMDB
   - OcticonsIOS (from `https://github.com/jacksonh/OcticonsIOS.git`, commit `4bd3b21`)
-  - ReactiveObjC (~> 2.1.1)
 
 EXTERNAL SOURCES:
   OcticonsIOS:
@@ -23,8 +21,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   OcticonsIOS: e21204b48b0d83f7740008abed42f8b1573b3ffc
-  ReactiveObjC: 05cc34afec2e598b17ebaf65bbddcfcfe7b14a09
 
-PODFILE CHECKSUM: 53b58674cda48655a466976aac2b9656b17ec893
+PODFILE CHECKSUM: 9e92c666788b6d7cca45f0ba95fe1a99129e472f
 
 COCOAPODS: 1.1.1
