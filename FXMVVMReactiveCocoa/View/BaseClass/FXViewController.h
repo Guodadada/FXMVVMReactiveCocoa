@@ -12,5 +12,6 @@
 @interface FXViewController : UIViewController
 
 - (instancetype)initWithViewModel:(FXViewModel *)viewModel;
+- (void)bindViewModel;
 
 @end

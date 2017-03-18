@@ -7,6 +7,7 @@ target 'FXMVVMReactiveCocoa' do
   
   pod 'OcticonsIOS', :git => 'https://github.com/jacksonh/OcticonsIOS.git', :commit => '4bd3b21'
   pod 'FMDB'
+  pod 'SDWebImage', '~>3.8'
 
   target 'FXMVVMReactiveCocoaTests' do
     inherit! :search_paths

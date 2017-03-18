@@ -22,17 +22,23 @@
 - (void)initialize {
     [super initialize];
     
+    // get avatarURL form FMDB
     RAC(self, avatarURL) = [[RACObserve(self, username)
                              map:^(NSString *username) {
                                  return [[OCTUser fx_fetchUserWithRawLogin:username] avatarURL];
-    }] distinctUntilChanged];
+                             }] distinctUntilChanged];
     
-    _validLoginSignal = [RACSignal combineLatest:@[RACObserve(self, username), RACObserve(self, password)]
-                                          reduce:^(NSString *username, NSString *password){
-        return @(username.length > 0 && password.length > 0);
-    }];
+    self.validLoginSignal = [RACSignal combineLatest:@[RACObserve(self, username), RACObserve(self, password)]
+                                              reduce:^(NSString *username, NSString *password){
+                                                  return @(username.length > 0 && password.length > 0);
+                                              }];
     
-    
+//    @weakify(self)
+//    self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+//        @strongify(self)
+//        OCTUser *user = [OCTUser userWithRawLogin:self.username server:[OCTServer dotComServer]];
+//        return [OCTClient signInAsUser:<#(OCTUser *)#> password:<#(NSString *)#> oneTimePassword:<#(NSString *)#> scopes:<#(OCTClientAuthorizationScopes)#> note:<#(NSString *)#> noteURL:<#(NSURL *)#> fingerprint:<#(NSString *)#>];
+//    }];
 }
 
 @end

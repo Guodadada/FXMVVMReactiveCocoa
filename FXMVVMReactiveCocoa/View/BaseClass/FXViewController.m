@@ -11,7 +11,7 @@
 
 @interface FXViewController ()
 
-@property (nonatomic, strong) FXViewModel *viewModel;
+@property (nonatomic, strong, readwrite) FXViewModel *viewModel;
 
 @end
 

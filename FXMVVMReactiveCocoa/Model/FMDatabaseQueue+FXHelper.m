@@ -15,6 +15,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         databaseQueue = [FMDatabaseQueue databaseQueueWithPath:FX_FMDB_PATH];
+        LOG(@"db路径:%@", FX_FMDB_PATH);
     });
     return databaseQueue;
 }

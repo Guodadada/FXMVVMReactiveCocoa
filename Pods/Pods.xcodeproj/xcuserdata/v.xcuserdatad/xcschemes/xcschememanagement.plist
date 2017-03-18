@@ -4,25 +4,48 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>OcticonsIOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
 		<key>Pods-FXMVVMReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>9</integer>
 		</dict>
 		<key>Pods-FXMVVMReactiveCocoaTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>10</integer>
 		</dict>
 		<key>Pods-FXMVVMReactiveCocoaUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>11</integer>
 		</dict>
 		<key>ReactiveObjC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -37,12 +60,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>3C3850E0D7D0CAB2118DB9617066A2F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5058DD6639C7530D1D543288DF177FB5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7F1B34E9A5B81BA58C2798DF9C229A4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8642CC820CE8C5B88C113D7F47AF4BC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B0A5FD6E09E0F723A5536B829C261F6B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F73159E2048BFF36E4E2C9DC9F40BA8B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
