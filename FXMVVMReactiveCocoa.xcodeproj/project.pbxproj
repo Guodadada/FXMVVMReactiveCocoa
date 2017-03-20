@@ -13,6 +13,7 @@
 		0E4B0DF01E779D6500AAB107 /* ISO8601DateFormatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4B0DCF1E779C6C00AAB107 /* ISO8601DateFormatter.framework */; };
 		0E4B0E0F1E77D54100AAB107 /* FMDatabaseQueue+FXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B0E0E1E77D54100AAB107 /* FMDatabaseQueue+FXHelper.m */; };
 		0EB369731E76A55E005EB87B /* UIImage+FXOcticons.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB369721E76A55E005EB87B /* UIImage+FXOcticons.m */; };
+		15085ADC1E8013BA005967EC /* FXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15085ADB1E8013BA005967EC /* FXTabBarController.m */; };
 		154484341E39A40200F2C60E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 154484331E39A40200F2C60E /* main.m */; };
 		154484371E39A40200F2C60E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 154484361E39A40200F2C60E /* AppDelegate.m */; };
 		1544843D1E39A40200F2C60E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1544843B1E39A40200F2C60E /* Main.storyboard */; };
@@ -174,6 +175,8 @@
 		0E4B0E0E1E77D54100AAB107 /* FMDatabaseQueue+FXHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabaseQueue+FXHelper.m"; sourceTree = "<group>"; };
 		0EB369711E76A55E005EB87B /* UIImage+FXOcticons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXOcticons.h"; sourceTree = "<group>"; };
 		0EB369721E76A55E005EB87B /* UIImage+FXOcticons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXOcticons.m"; sourceTree = "<group>"; };
+		15085ADA1E8013BA005967EC /* FXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXTabBarController.h; sourceTree = "<group>"; };
+		15085ADB1E8013BA005967EC /* FXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXTabBarController.m; sourceTree = "<group>"; };
 		1544842F1E39A40200F2C60E /* FXMVVMReactiveCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FXMVVMReactiveCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		154484331E39A40200F2C60E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		154484351E39A40200F2C60E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -465,6 +468,8 @@
 				158843A01E50918700314599 /* FXNavigationControllerStack.m */,
 				158843B01E53403900314599 /* FXViewController.h */,
 				158843B11E53403900314599 /* FXViewController.m */,
+				15085ADA1E8013BA005967EC /* FXTabBarController.h */,
+				15085ADB1E8013BA005967EC /* FXTabBarController.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -913,6 +918,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15085ADC1E8013BA005967EC /* FXTabBarController.m in Sources */,
 				0E4B0E0F1E77D54100AAB107 /* FMDatabaseQueue+FXHelper.m in Sources */,
 				0E07D2D51E79128100A226A0 /* OCTUser+FXPersistence.m in Sources */,
 				158843B51E53409700314599 /* FXLoginViewModel.m in Sources */,

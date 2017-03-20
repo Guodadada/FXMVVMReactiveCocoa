@@ -46,15 +46,15 @@
 
 - (void)bindViewModel {
     [super bindViewModel];
-    // 绑定 userName, password
-    RAC(self.viewModel, username) = self.usernameTextField.rac_textSignal;
-    RAC(self.viewModel, password) = self.passwordTextField.rac_textSignal;
     // avatar
     @weakify(self)
     [RACObserve(self.viewModel, avatarURL) subscribeNext:^(NSURL *avatarURL) {
         @strongify(self)
         [self.avatarButton sd_setImageWithURL:avatarURL forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"default-avatar"]];
     }];
+    // 绑定 userName, password
+    RAC(self.viewModel, username) = self.usernameTextField.rac_textSignal;
+    RAC(self.viewModel, password) = self.passwordTextField.rac_textSignal;
     // loginBtn
     RAC(self.loginButton, enabled) = self.viewModel.validLoginSignal;
     [[self.loginButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {

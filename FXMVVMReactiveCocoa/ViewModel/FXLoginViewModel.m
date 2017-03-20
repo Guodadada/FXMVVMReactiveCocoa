@@ -33,12 +33,25 @@
                                                   return @(username.length > 0 && password.length > 0);
                                               }];
     
-//    @weakify(self)
-//    self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-//        @strongify(self)
-//        OCTUser *user = [OCTUser userWithRawLogin:self.username server:[OCTServer dotComServer]];
-//        return [OCTClient signInAsUser:<#(OCTUser *)#> password:<#(NSString *)#> oneTimePassword:<#(NSString *)#> scopes:<#(OCTClientAuthorizationScopes)#> note:<#(NSString *)#> noteURL:<#(NSURL *)#> fingerprint:<#(NSString *)#>];
-//    }];
+    @weakify(self)
+    void (^doNext)(OCTClient *) = ^(OCTClient *authenticatedClient){
+        LOG(@"run doNext");
+    };
+    
+    self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(NSString *oneTimePassword) {
+        @strongify(self)
+        OCTUser *user = [OCTUser userWithRawLogin:self.username
+                                           server:[OCTServer dotComServer]];
+        return [[OCTClient signInAsUser:user
+                              password:self.password
+                       oneTimePassword:oneTimePassword
+                                scopes:OCTClientAuthorizationScopesUser | OCTClientAuthorizationScopesRepository    // 登录的权限设置
+                                  note:nil
+                               noteURL:nil
+                           fingerprint:nil] doNext:doNext];
+    }];
+    
+    [OCTClient setClientID:FX_CLIENT_ID clientSecret:FX_CLIENT_SECRET];
 }
 
 @end

@@ -15,6 +15,13 @@
 
 #define FXSharedAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
+///------------
+/// Client Info
+///------------
+
+#define FX_CLIENT_ID     @"ef5834ea86b53233dc41"
+#define FX_CLIENT_SECRET @"6eea860464609635567d001b1744a052f8568a99"
+
 ///----------------------
 /// Persistence Directory
 ///----------------------
