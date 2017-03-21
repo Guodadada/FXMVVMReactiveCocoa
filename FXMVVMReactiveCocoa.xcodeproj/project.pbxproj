@@ -19,6 +19,10 @@
 		15085AFB1E8025A4005967EC /* FXHomepageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15085AFA1E8025A4005967EC /* FXHomepageViewModel.m */; };
 		15085AFE1E8025E9005967EC /* FXTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15085AFD1E8025E9005967EC /* FXTableViewModel.m */; };
 		15085B011E802610005967EC /* FXNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15085B001E802610005967EC /* FXNewsViewModel.m */; };
+		15085B071E8161B4005967EC /* FXSegmentedControlViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15085B061E8161B4005967EC /* FXSegmentedControlViewModel.m */; };
+		15085B0A1E8161DE005967EC /* FXReposViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15085B091E8161DE005967EC /* FXReposViewModel.m */; };
+		15085B0D1E8162A6005967EC /* FXExploreViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15085B0C1E8162A6005967EC /* FXExploreViewModel.m */; };
+		15085B101E8162B5005967EC /* FXProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15085B0F1E8162B5005967EC /* FXProfileViewModel.m */; };
 		154484341E39A40200F2C60E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 154484331E39A40200F2C60E /* main.m */; };
 		154484371E39A40200F2C60E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 154484361E39A40200F2C60E /* AppDelegate.m */; };
 		1544843D1E39A40200F2C60E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1544843B1E39A40200F2C60E /* Main.storyboard */; };
@@ -192,6 +196,14 @@
 		15085AFD1E8025E9005967EC /* FXTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXTableViewModel.m; sourceTree = "<group>"; };
 		15085AFF1E802610005967EC /* FXNewsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXNewsViewModel.h; sourceTree = "<group>"; };
 		15085B001E802610005967EC /* FXNewsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXNewsViewModel.m; sourceTree = "<group>"; };
+		15085B051E8161B4005967EC /* FXSegmentedControlViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXSegmentedControlViewModel.h; sourceTree = "<group>"; };
+		15085B061E8161B4005967EC /* FXSegmentedControlViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXSegmentedControlViewModel.m; sourceTree = "<group>"; };
+		15085B081E8161DE005967EC /* FXReposViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXReposViewModel.h; sourceTree = "<group>"; };
+		15085B091E8161DE005967EC /* FXReposViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXReposViewModel.m; sourceTree = "<group>"; };
+		15085B0B1E8162A6005967EC /* FXExploreViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXExploreViewModel.h; sourceTree = "<group>"; };
+		15085B0C1E8162A6005967EC /* FXExploreViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXExploreViewModel.m; sourceTree = "<group>"; };
+		15085B0E1E8162B5005967EC /* FXProfileViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXProfileViewModel.h; sourceTree = "<group>"; };
+		15085B0F1E8162B5005967EC /* FXProfileViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXProfileViewModel.m; sourceTree = "<group>"; };
 		1544842F1E39A40200F2C60E /* FXMVVMReactiveCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FXMVVMReactiveCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		154484331E39A40200F2C60E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		154484351E39A40200F2C60E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -436,6 +448,12 @@
 				158843B41E53409700314599 /* FXLoginViewModel.m */,
 				15085AFF1E802610005967EC /* FXNewsViewModel.h */,
 				15085B001E802610005967EC /* FXNewsViewModel.m */,
+				15085B081E8161DE005967EC /* FXReposViewModel.h */,
+				15085B091E8161DE005967EC /* FXReposViewModel.m */,
+				15085B0B1E8162A6005967EC /* FXExploreViewModel.h */,
+				15085B0C1E8162A6005967EC /* FXExploreViewModel.m */,
+				15085B0E1E8162B5005967EC /* FXProfileViewModel.h */,
+				15085B0F1E8162B5005967EC /* FXProfileViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -468,6 +486,8 @@
 				15085AF41E80251B005967EC /* FXTabBarViewModel.m */,
 				15085AFC1E8025E9005967EC /* FXTableViewModel.h */,
 				15085AFD1E8025E9005967EC /* FXTableViewModel.m */,
+				15085B051E8161B4005967EC /* FXSegmentedControlViewModel.h */,
+				15085B061E8161B4005967EC /* FXSegmentedControlViewModel.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -943,9 +963,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15085B0A1E8161DE005967EC /* FXReposViewModel.m in Sources */,
 				15085AFB1E8025A4005967EC /* FXHomepageViewModel.m in Sources */,
 				15085ADC1E8013BA005967EC /* FXTabBarController.m in Sources */,
 				0E4B0E0F1E77D54100AAB107 /* FMDatabaseQueue+FXHelper.m in Sources */,
+				15085B101E8162B5005967EC /* FXProfileViewModel.m in Sources */,
 				15085AFE1E8025E9005967EC /* FXTableViewModel.m in Sources */,
 				0E07D2D51E79128100A226A0 /* OCTUser+FXPersistence.m in Sources */,
 				158843B51E53409700314599 /* FXLoginViewModel.m in Sources */,
@@ -955,7 +977,9 @@
 				154484371E39A40200F2C60E /* AppDelegate.m in Sources */,
 				158843A11E50918700314599 /* FXNavigationControllerStack.m in Sources */,
 				15085B011E802610005967EC /* FXNewsViewModel.m in Sources */,
+				15085B0D1E8162A6005967EC /* FXExploreViewModel.m in Sources */,
 				15085AF51E80251B005967EC /* FXTabBarViewModel.m in Sources */,
+				15085B071E8161B4005967EC /* FXSegmentedControlViewModel.m in Sources */,
 				154484341E39A40200F2C60E /* main.m in Sources */,
 				158843981E507DA600314599 /* FXViewModel.m in Sources */,
 				0EB369731E76A55E005EB87B /* UIImage+FXOcticons.m in Sources */,

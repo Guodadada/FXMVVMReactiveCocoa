@@ -7,7 +7,16 @@
 //
 
 #import "FXTabBarViewModel.h"
+#import "FXNewsViewModel.h"
+#import "FXReposViewModel.h"
+#import "FXExploreViewModel.h"
+#import "FXProfileViewModel.h"
 
 @interface FXHomepageViewModel : FXTabBarViewModel
+
+@property (nonatomic, strong, readonly) FXNewsViewModel *newsViewModel;
+@property (nonatomic, strong, readonly) FXReposViewModel *reposViewModel;
+@property (nonatomic, strong, readonly) FXExploreViewModel *exploreViewModel;
+@property (nonatomic, strong, readonly) FXProfileViewModel *profileViewModel;
 
 @end
